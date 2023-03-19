@@ -1,0 +1,10 @@
+.container{
+    width:90%;
+    background-color: aliceblue;
+}
+
+.page{
+    width:100%;
+    margin:auto;
+    background-color: darkred;
+}

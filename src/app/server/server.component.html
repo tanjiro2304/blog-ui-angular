@@ -1,0 +1,23 @@
+
+
+
+    <div class="container">
+        <h2 style="margin:1%">Server Component</h2>
+        <p style="margin:1%">
+            This is server side component.<br>
+            Server Name: {{serverName}}<br>
+            Server Id: {{serverId}}<br>
+            Server Status: {{ isOnline ? "Online": "Offline"}}<br>
+            Server Created : {{serverCreationStatus}}<br>
+            </p>
+        <label style="margin:1%">Enter Server Name</label>
+        <!-- <input style="margin:1%" type="text" class="form-control" placeholder="Server Name" (input)="onUpdateServerName($event)"> -->
+
+        <input style="margin:1%" type="text" class="form-control" placeholder="Server Name" [(ngModel)]="serverName">
+        <button style="margin:1%" class="btn btn-primary" [disabled]="!creationStatus" (click)="onCreateServer()">
+        Create Server
+    </button>
+    </div>
+
+    
+

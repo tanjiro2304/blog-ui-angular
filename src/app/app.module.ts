@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgFor } from '@angular/common';
 import { CreateBlogComponent } from './create-blog/create-blog.component';
 import { HomeComponent } from './home/home.component';
+import { DisplayBlogComponent } from './display-blog/display-blog.component';
 
 @NgModule({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     UserComponentComponent,
     SimpleCardComponent,
     CreateBlogComponent,
-    HomeComponent
+    HomeComponent,
+    DisplayBlogComponent
   ],
   imports: [
     FormsModule,

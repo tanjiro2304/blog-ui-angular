@@ -1,5 +1,5 @@
 .card{
-    margin: 20px;
+    margin: 0px;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -7,5 +7,6 @@
 
 .card-body{
     margin:10px;
+    border:2px solid black;
     border-radius: 5px;
 }

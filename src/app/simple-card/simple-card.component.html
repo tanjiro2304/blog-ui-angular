@@ -1,7 +1,8 @@
 <div class="card">
-    <div *ngFor='let blog of blogs' class="card-body" style="width: 18rem; " >
-      <h2 class="card-title">{{blog.blogTitle}}</h2>
+    <div *ngFor='let blog of blogs' class="card-body" style="width: 18rem; ">
+      <h3 class="card-title" style="font-weight: bold;">{{blog.blogTitle}}</h3>
       <p class="card-text">{{blog.blogDescription}}</p>
-      <a href="#" class="btn btn-primary">Go To Blog</a>
+      <button class="btn btn-primary" type="submit" (click)="gotToDisplayBlog('display-blog/' + blog.blogPostId)">Go To Blog</button>
+      <!-- <a href="/display-blog" class="btn btn-primary">Go To Blog</a> -->
     </div>
   </div>
